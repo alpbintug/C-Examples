@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    //Printing "Hello world with different methods
+
+    printf("Hello World 1\n");
+    puts("Hello World 2\n");
+
+    //Using char* to print hello world;
+    char *helloWorld="Hello World 3\n";
+    while(putchar(*helloWorld++));
+    helloWorld = "Hello World 4\n";
+    write(1,helloWorld,14);
+    helloWorld = "Hello World 5\n";
+    printf("%s",helloWorld);
+    helloWorld = "Hello World 6\n";
+    puts(helloWorld);
+
+    return 0;
+}
