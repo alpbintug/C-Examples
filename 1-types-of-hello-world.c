@@ -10,10 +10,9 @@ int main(){
     //Using char* to print hello world;
     char *helloWorld="Hello World 3\n";
     //Putting each character until string ends
-    while(putchar(*helloWorld++));//putchar function returns a integer value, if it returns a 0, that means the next char is \0
+    while(putchar(*helloWorld++));//putchar function returns a integer value, if it returns a 0, that means the next char is '\0'
     helloWorld = "Hello World 4\n";
-    //First value 1 means writing mode, middle valua is the string we want to write, last value is the lenght
-    write(1,helloWorld,14);
+    write(1,helloWorld,14);    //First value 1 means writing mode, middle valua is the string we want to write, last value is the lenght
     helloWorld = "Hello World 5\n";
     printf("%s",helloWorld);
     helloWorld = "Hello World 6\n";
