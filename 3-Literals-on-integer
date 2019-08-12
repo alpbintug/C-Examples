@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    int decimal = 623;
+    int octal = 043;
+    int hexadecimal = 0x12;
+    unsigned int unsignedInt = -39u;
+    long long int longInt = 432140224304L;
+
+    printf("Decimal value: %d\n", decimal);
+    printf("Octal value: %o, Transformed to decimal: %d\n",octal,octal);
+    printf("Hexadecimal value: %x, Transformed to decimal: %d\n",hexadecimal,hexadecimal);
+    printf("Unsigned value: %u, Signed value: %d\n",unsignedInt,unsignedInt);
+    printf("Long integer value: %lld, Integer value: %d\n",longInt,longInt);
+
+
+}
