@@ -2,8 +2,8 @@
 
 int main(){
     int decimal = 623;
-    int octal = 043;
-    int hexadecimal = 0x12;
+    int octal = 043;//To convert an octal value to decimal value; from right-most to left most: first digit: val, second digit: val*(8^1), third digit: val*(8^2), nth digit: val*(8^(n-1)), then we sum all of the values we get.
+    int hexadecimal = 0xa2;//To convert a hexadecimal value to decimal value; follow the same steps above with a different constant; val*(16^(n-1)), then sum all of the values. Values of letters: A=10,B=11,C=12,D=13,E=14,F=15
     unsigned int unsignedInt = -39u;
     long long int longInt = 432140224304L;
 
