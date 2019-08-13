@@ -6,7 +6,6 @@
 
 main(){
     int i,j,money,moneyNeededToWin,win,startingMoney,sampleSpaceSize,winCondition;
-    float yuzde;
     srand(time(NULL));
     win=0;
     moneyNeededToWin=10;
