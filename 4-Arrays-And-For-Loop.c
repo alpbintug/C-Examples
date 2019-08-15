@@ -1,15 +1,19 @@
 #include <stdio.h>
 
 int main(){
- int a[10];
- char b[10];
- char c[10];
+ int a[10]; //Creating an integer array
+ char b[10]; //Creating two char arrays
+ char c[10]; 
+ 
+ /* Illegal array creation:
+ int x=10;
+ int a[x];*/
 
- int i;
+ int i; //Loop variable
 
  for(i=0;i<10;i++){
-    a[i] = i*i+i;
-    b[i] = 'A'+i;
+    a[i] = i*i+i; //Assigning values
+    b[i] = 'A'+i; //Yes you can assign integer value to a char, but it's limited by one byte.
     c[i] = 'a'+i;
  }
 
