@@ -5,9 +5,15 @@ int main(){
  char b[10]; //Creating two char arrays
  char c[10]; 
  
- /* Illegal array creation:
+ /* 
+ Illegal array creation:
  int x=10;
- int a[x];*/
+ int a[x];
+ You can't do this because when compiler starts, It reserves a spot in memory for variables in the code.
+ Trying to create a[x] is illegal because you have to reserve a spot in memory for arrays too. 
+ To do so, you have to make their size constants, not variables. Because in C variables have no value in the time of reserving spot for them.
+ So when compiler sees a[x] it can't reserve a spot for it and you will encounter an error.
+ */
 
  int i; //Loop variable
 
