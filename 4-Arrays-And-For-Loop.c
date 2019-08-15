@@ -26,5 +26,21 @@ int main(){
  for(i=0;i<10;i++){
     printf("%d  %c  %d  %c\n",a[i],b[i],b[i],c[i]);
  }
-
+/* Output:
+0  A  65  a
+2  B  66  b
+6  C  67  c
+12  D  68  d
+20  E  69  e
+30  F  70  f
+42  G  71  g
+56  H  72  h
+72  I  73  i
+90  J  74  j
+As you can see here, characters -letters- have their integer value -ASCII code-, and by increasing this value we can write other letters.
+Remember, 
+char a = 0; Means a is null, ASCII code of null is zero and by assigning an integer value to a char, you assign the ASCII response of it.
+char a = '0'; Means a is zero, ASCII code of numerical zero can be printed by printf("%d",a);
+int b = 0, Means b is zero, not null.
+*/
 }
