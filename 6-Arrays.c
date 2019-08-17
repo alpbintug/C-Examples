@@ -45,7 +45,7 @@ int main(){
     string4[3]='l';//You can manipulate your array afterwards.
     string4[4]='o';
     for(i=0;i<5;i++){
-        printf("%c",string4);
+        printf("%c",string4[i]);
     }
     //Output: Hello
     string4[5]=0;//Setting the last character to null to print the char array out as string
