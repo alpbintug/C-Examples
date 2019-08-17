@@ -19,7 +19,7 @@ int main(){
     printf("\n");
     i=0;
     do{
-        print("%d ",i);
+        printf("%d ",i);
         i++;
     }while(i<10);
     printf("\n");
