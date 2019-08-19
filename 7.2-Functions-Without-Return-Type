@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+/*Functions are generally used to simplify the code structure and they make the code easier to read.
+One of the main goals of the functions is making repeatative code blocks easier to call.*/
 void printOperationResult(float x, float y,  int operationOffset){
     if(operationOffset==0){
         printf("%f",x+y);
