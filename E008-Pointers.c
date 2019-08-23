@@ -26,5 +26,33 @@ int main(){
     floatP = &varFloat;
     printf("\nValue of float is: %f\nAddress of float: %x\nValue held by doublePointer is: %f\nAddress held by doublePointer is: %x\n",varFloat,&varFloat,*floatP,floatP);
 
+        
+    /*
+    (ADDRESS VALUES WILL BE DIFFERENT EVEN IF YOU COPY & PASTE THIS CODE, NOTHING IS WRONG, YOUR COMPILER JUST GAVE THOSE VARIABLES DIFFERENT ADDRESSES)
 
+    Output:
+        
+    Value of integer is: 1
+    Address of integer: 61ff08
+    Value held by intPointer is: 1  
+    Address held by intPointer is: 61ff08
+
+    Value of character is: a
+    Address of character:  61ff07
+    Value held by charPointer is: a
+    Address held by charPointer is: 61ff07
+
+    String held by charPointer2:This is how you declare a string
+    Address held in charPointer2: 405048
+
+    Value of double is: 1.235375
+    Address of double: 61fef8
+    Value held by doublePointer is: 1.235375
+    Address held by doublePointer is: 61fef8
+
+    Value of float is: 567.234619
+    Address of float: 61fef4
+    Value held by doublePointer is: 567.234619
+    Address held by doublePointer is: 61fef4
+    */
 }
