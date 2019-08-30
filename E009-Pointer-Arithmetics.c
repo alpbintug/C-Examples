@@ -21,28 +21,28 @@ int main(){
 
     int arrInt[4] = {0xAA,0x01,0x10,0x14};
     int *ptrInt = arrInt;
-    printf("First value of array: %x\n",*ptrInt);
+    printf("First value of array: %x, address of array[0]: %x\n",*ptrInt,ptrInt);
     ptrInt++;
-    printf("First increment of pointer: %x\n",*ptrInt);
+    printf("First increment of pointer: %x, address of array[1]: %x\n",*ptrInt,ptrInt);
     ptrInt++;
-    printf("Second increment of pointer: %x\n",*ptrInt);
+    printf("Second increment of pointer: %x, address of array[2]: %x\n",*ptrInt,ptrInt);
     ptrInt++;
-    printf("Third increment of pointer: %x\n",*ptrInt);
+    printf("Third increment of pointer: %x, address of array[3]: %x\n",*ptrInt,ptrInt);
 
     /*Output:
-    First value of array: aa
-    First increment of pointer: 1
-    Second increment of pointer: 10
-    Third increment of pointer: 14
+    First value of array: aa, address of array[0]: 61ff00
+    First increment of pointer: 1, address of array[1]: 61ff04
+    Second increment of pointer: 10, address of array[2]: 61ff08
+    Third increment of pointer: 14, address of array[3]: 61ff0c
     */
     int _arrInt[4] = {1,2};
     int *ptr_Int = _arrInt;
-    printf("First value of array: %d\n",*ptr_Int);
+    printf("First value of array: %d, address of array[0]: %x\n",*ptr_Int,ptr_Int);
     ptr_Int++;
-    printf("First increment of pointer: %d\n",*ptr_Int);
+    printf("First increment of pointer: %d, address of array[1]: %x\n",*ptr_Int,ptr_Int);
     /*Output:
-    First value of array: 1
-    First increment of pointer: 2
+    First value of array: 1, address of array[0]: 61fef0
+    First increment of pointer: 2, address of array[1]: 61fef4
     */
 
     return 0;
