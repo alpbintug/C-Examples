@@ -12,16 +12,16 @@ int main(){
     ptr-=2;
     printf("First char of the string: %c, address of first char: %x\n",*ptr,ptr);
     /*Output:
-
     First char of the string: T, address of first char: 405044
     Second char of the string: h, address of second char: 405045
     Third char of the string: i, address of third char: 405046
     First char of the string: T, address of first char: 405044
+    
+    As you can see here, "++" operation on char pointers increment the pointer value by one byte, which is the size of a char. Theoretically you can see the whole memory using pointer arithmetics.
     */
-
     int arrInt[4] = {0xAA,0x01,0x10,0x14};
     int *ptrInt = arrInt;
-    printf("First value of array: %x, address of array[0]: %x\n",*ptrInt,ptrInt);
+    printf("\nFirst value of array: %x, address of array[0]: %x\n",*ptrInt,ptrInt);
     ptrInt++;
     printf("First increment of pointer: %x, address of array[1]: %x\n",*ptrInt,ptrInt);
     ptrInt++;
@@ -34,10 +34,11 @@ int main(){
     First increment of pointer: 1, address of array[1]: 61ff04
     Second increment of pointer: 10, address of array[2]: 61ff08
     Third increment of pointer: 14, address of array[3]: 61ff0c
+    "++" operation on integer pointers increment the pointer value by four bytes, which is the size of a integer. 
     */
     int _arrInt[4] = {1,2};
     int *ptr_Int = _arrInt;
-    printf("First value of array: %d, address of array[0]: %x\n",*ptr_Int,ptr_Int);
+    printf("\nFirst value of array: %d, address of array[0]: %x\n",*ptr_Int,ptr_Int);
     ptr_Int++;
     printf("First increment of pointer: %d, address of array[1]: %x\n",*ptr_Int,ptr_Int);
     /*Output:
